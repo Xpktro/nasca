@@ -1,0 +1,119 @@
+@import './fonts.scss';
+
+html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #4d120f;
+  color: white;
+  font-family: 'Lato-Regular';
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'LDR#8';
+  color: #D5AC49;
+  margin-top: 1em;
+  word-wrap: break-word;
+}
+
+h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.3em;
+  border-bottom: 1px solid rgba(213, 172, 73, 0.5);
+}
+
+h4 {
+  text-align: center;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+h5 {
+  text-align: center;
+}
+
+span {
+  font-weight: 200;
+}
+
+pre {
+  flex-grow: 1;
+  overflow: scroll;
+  font-size: 1.3em;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+p {
+  text-align: justify;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-around;
+}
+
+.column {
+  flex-grow: 3;
+  width: 40%;
+  border: 1px solid rgba(213, 172, 73, 0.5);
+  margin: .4em;
+  padding: 1em;
+  flex-basis: 20em;
+
+  &:last-child {
+    flex-grow: 1;
+  }
+}
+
+.bridge {
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.bridge-row {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bridge-column {
+  flex-grow: 1;
+  width: 50%;
+  margin: 0.4em 0 0.4em 0;
+  padding: 0 0.2em 0 0.2em;
+}
+
+select, button {
+  width: 100%;
+  height: 2.5em;
+  background-color: #daba70;
+  color: #4d120f;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 0;
+}
+
+button {
+  height: 3em;
+  margin: 0.5em 0 0.5em 0;
+  font-size: 1em;
+}

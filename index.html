@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/application.scss">
+  <title>Nasca MIDI Bridge</title>
+</head>
+<body>
+  <h1>Nasca MIDI Bridge</h1>
+  <div class="row">
+    <div class="column">
+      <h3>What</h3>
+      <p>This is a MIDI processor that will allow you to use the 13-note Nasca culture scale on any pitchbend-capable MIDI instrument.</p>
+      <p>Just connect a MIDI interface to your computer, select the appropiate input/output ports and play. Every note sent through the input device will be replaced by another corresponding Nasca scale degree based on the current fundamental tone and sent back through the output device.</p>
+      <p>The scale's fundamental note can be set by pressing the "Set Fundamental Note" button and pressing the desired note key in your MIDI controller.</p>
+      <p><i>Note:</i> Set your instrument's pitchbend range to 2 semitones for this to work properly.</p>
+
+      <h3>How</h3>
+      <p>
+        In 2017, peruvian musicologist Américo Valencia Chacón published a book titled "Música Nasca - Fundamentos, Permanencia y Cambio" (roughly translated
+        as "Nasca Music - Foundations, Continuity and Changes") after an investigation in which he discovers that Nascas (100 B.C. - 800 A.C.) -besides their
+        impressive advancements in architecture, textile production and others- had a complete tuning system based on mathematically verifiable, simple physical principles.
+      </p>
+      <p>
+        Results from this investigation determined the existence of a musical scale consisting of 13 notes used for Nasca pan flutes tuning,
+        whose distribution follows an hyperbolic curve based on a fundamental tone described by the dimensions of largest tube in their build.
+      </p>
+      <p>
+        As the book summary says: "(...) These findings definitively sets aside Raoul and Marguerite D'Harcourt research (1925), who state
+        andean music foundation is pentaphonic. Without a doubt, the book constitutes an important and groundbreaking contribution to andean
+        pre-Hispanic musical knowledge"
+      </p>
+    </div>
+    <div class="column">
+      <h3>Bridge</h3>
+      <div class="bridge">
+        <div class="bridge-row">
+          <div class="bridge-column">MIDI Input Device:</div>
+          <div class="bridge-column"><select id="input-devices"></select></div>
+        </div>
+        <div class="bridge-row">
+          <div class="bridge-column">MIDI Output Device:</div>
+          <div class="bridge-column"><select id="output-devices"></select></div>
+        </div>
+        <div class="bridge-row">
+          <div class="bridge-column">Fundamental Note:</div>
+          <div class="bridge-column"><span id="note">69</span></div>
+        </div>
+        <div class="bridge-row">
+          <div class="bridge-column">Fundamental Frequency:</div>
+          <div class="bridge-column"><span id="frequency">440.00</span></div>
+        </div>
+        <button id="set-note">Set fundamental note</button>
+      </div>
+      <h3>Logs</h3>
+      <pre id="logs"></pre>
+    </div>
+  </div>
+  <h5>Passionately crafted by the <a href="http://moises.ninja">MATRIX OPERATOR</a></h5>
+  <script type="text/javascript" src="js/application.js"></script>
+</body>
+</html>
